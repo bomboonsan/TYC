@@ -29,7 +29,7 @@
     @apply basis-2/3 w-2/3;
 }
 .main-menu {
-    @apply hidden absolute md:relative left-0 top-full md:top-0 p-5 md:p-0 w-full bg-gray backdrop-blur-lg md:backdrop-blur-0 md:bg-inherit;
+    @apply hidden md:block absolute md:relative left-0 top-full md:top-0 p-5 md:p-0 w-full bg-gray backdrop-blur-lg md:backdrop-blur-0 md:bg-inherit;
     ul {
         @apply flex flex-col md:flex-row flex-wrap gap-4 md:gap-10 justify-start;
     }
