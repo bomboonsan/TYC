@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="ติดต่อเรา">
+	<main>
+		<figure class="w-full mb-20">
+			<img class="w-full" src="/assets/img/contact.png" alt="ติดต่อเรา" />
+		</figure>
+		<div class="container mb-20">
+			<div class="flex flex-wrap justify-between gap-y-10">
+				<div class="basis-full w-full md:basis-1/3 md:w-1/3">
+					<h1 class="text-3xl font-semibold mb-3">ติดต่อเรา</h1>
+					<p class="mb-3">
+						บริษัท ที.วาย.ซี. ซีล จํากัด
+					</p>
+					<p class="mb-3">
+						4/4 ซอยโชคดี หมู่ 7 ถนนพุทธมณฑล สาย 4 ตําาบลกระทุ่มล้ม อําาเภอสามพราน จังหวัด นครปฐม 73220
+					</p>
+					<p class="mb-3 flex gap-3 items-center">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 3C1 1.89543 1.89543 1 3 1H6.27924C6.70967 1 7.09181 1.27543 7.22792 1.68377L8.72574 6.17721C8.88311 6.64932 8.66938 7.16531 8.22427 7.38787L5.96701 8.5165C7.06925 10.9612 9.03878 12.9308 11.4835 14.033L12.6121 11.7757C12.8347 11.3306 13.3507 11.1169 13.8228 11.2743L18.3162 12.7721C18.7246 12.9082 19 13.2903 19 13.7208V17C19 18.1046 18.1046 19 17 19H16C7.71573 19 1 12.2843 1 4V3Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>							
+						(66-2) 4042730
+					</p>
+					<p class="mb-3 flex gap-3 items-center">
+						<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 4L8.8906 9.2604C9.5624 9.70827 10.4376 9.70827 11.1094 9.2604L19 4M3 15H17C18.1046 15 19 14.1046 19 13V3C19 1.89543 18.1046 1 17 1H3C1.89543 1 1 1.89543 1 3V13C1 14.1046 1.89543 15 3 15Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>							
+						contact@tycseal.com
+					</p>
+				</div>
+				<div class="basis-full w-full md:basis-1/2 md:w-1/2">
+					<form action="" class="contact-form">
+						<input type="text" placeholder="ชื่อ-นามสกุล" />
+						<input type="email" placeholder="อีเมล" />
+						<input type="tel" placeholder="เบอร์โทรศัพท์ติดต่อ" />
+						<textarea name="" id="" cols="30" rows="10" placeholder="ข้อความของคุณ"></textarea>
+						<button type="submit">ส่งข้อมูล</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="google-map mb-10">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7209711357077!2d100.31946627593163!3d13.735335797672782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29536c817934b%3A0xe787b4a11d660f19!2z4LiX4Li1LuC4p-C4suC4oi7guIvguLUu4LiL4Li14LilIOC4iOC4s-C4geC4seC4lA!5e0!3m2!1sth!2sth!4v1701383637852!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</main>
+</Layout>

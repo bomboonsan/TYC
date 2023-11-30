@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Slider from '../components/HomeSlider.jsx';
+---
+
+<Layout title="Home Page">
+	<main>
+		<Slider client:load />
+		<section class="bg-gray py-10 md:py-20">
+			<div class="container">
+				<div class="flex flex-wrap items-center gap-y-10">
+					<div class="basis-full w-full md:basis-5/12 md:w-5/12 text-white md:pr-10">
+						<h2 class="text-3xl font-semibold">
+							บริการขึ้นรูปยางตามแม่พิมพ์
+						</h2>
+						<p>
+							เรามีประสบการณ์มากกว่า 20 ปี และมีที่ปรึกษา เพื่อแนะนำตามความต้องการของลูกค้าและเหมาะสมกับการใช้งาน
+						</p>
+					</div>
+					<div class="basis-full w-full md:basis-7/12 md:w-7/12">
+						<div class="flex flex-wrap items-stretch justify-between gap-y-5">
+							<div class="basis-full w-full md:basis-6/12">
+								<img class="w-full mb-3" src="/assets/img/Rectangle-3.png" alt="" >    
+								<p class="text-white">
+									บริการขึ้นรูปผลิตภัณฑ์ยางต่างๆ
+								</p>
+							</div>
+							<div class="basis-full w-full md:basis-6/12 relative md:-left-10 md:mt-[100px]">
+								<img class="w-full mb-3" src="/assets/img/Rectangle-4.png" alt="" >    
+								<p class="text-white">
+									กล่องชุดโอริง (O-Ring Kit)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-10 md:py-20">
+			<div class="container">
+				<div class="video-thumbnail">
+					<img class="w-full" src="/assets/img/videoThumbnail.png" alt="" />
+					<div class="play-button">
+						<img src="/assets/img/play.png" alt="" />
+					</div>
+				</div>
+				<video class="hidden" id="video" controls poster="/assets/img/videoThumbnail.png">
+					<source src="path/to/video.mp4" type="video/mp4">
+					<source src="path/to/video.webm" type="video/webm">
+					<source src="path/to/video.ogv" type="video/ogg">
+				</video>
+			</div>
+		</section>
+	</main>
+</Layout>

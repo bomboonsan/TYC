@@ -1,0 +1,10 @@
+.video-thumbnail {
+    @apply relative;
+    .play-button {
+        @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 cursor-pointer;
+    }
+}
+.video-thumbnail::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-black/50 z-10;
+}

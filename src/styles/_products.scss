@@ -1,0 +1,20 @@
+.grid-products {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-0;
+    .card-product {
+        @apply relative;
+        @apply aspect-square p-2 flex justify-center items-center text-center text-white text-lg font-semibold;
+        @apply bg-neutral-900 bg-cover bg-center bg-no-repeat;
+
+        p {
+            @apply relative z-20 cursor-pointer;
+        }
+    }
+    .card-product::before {
+        content: '';
+        @apply bg-[#FF4500]/70 hidden transition-all cursor-pointer;
+        @apply absolute w-full h-full z-10 left-0 top-0;
+    }
+    .card-product:hover::before {
+        @apply block transition-all;
+    }
+}

@@ -1,0 +1,14 @@
+.footer {
+    @apply bg-gray text-footerText py-10 md:py-3;
+
+    svg {
+        @apply h-5;
+    }
+    svg:hover {
+        fill: #fff;
+    }
+}
+
+.footer-row {
+    @apply flex flex-wrap flex-col-reverse gap-5 md:gap-0 md:flex-row justify-center md:justify-between items-center;
+}

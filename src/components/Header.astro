@@ -1,0 +1,54 @@
+---
+
+---
+
+<header id="site-header" class="site-header">
+    <div class="container">
+        <div class="header-row">
+            <div class="logo-wrapper">
+                <a href="/">
+                    <img src="/assets/img/logo.png" alt="LOGO" >    
+                </a>
+            </div>
+            <div class="menu-wrapper">
+                <div class="icon-menu">
+                    <button type="button" class="menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </button>
+                </div>
+                <nav id="mainMenu" class="main-menu">
+                    <ul>
+                        <li><a href="/">หน้าหลัก</a></li>
+                        <li><a href="/products">สินค้าและบริการ</a></li>
+                        <li><a href="/about">เกี่ยวกับเรา</a></li>
+                        <li><a href="/contact">ติดต่อเรา</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    let siteHeader = document.getElementById('site-header');
+    // Add a scroll event listener to the window
+    window.addEventListener('scroll', () => {
+        // Check if the scroll position is greater than or equal to 100px
+        if (window.scrollY >= 140) {
+            // Add the "scrolled" class to the header
+            siteHeader.classList.add('header-scroll');
+        }
+
+        if (window.scrollY < 139) {
+            // Add the "scrolled" class to the header
+            siteHeader.classList.remove('header-scroll');
+        }
+    });
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainMenu = document.querySelector('#mainMenu');
+
+    menuToggle.addEventListener('click', function () {
+      mainMenu.classList.toggle('show-menu');
+    });
+</script>

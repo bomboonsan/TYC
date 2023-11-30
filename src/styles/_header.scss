@@ -1,0 +1,55 @@
+.site-header {
+    @apply p-4 transition-all;
+    @apply absolute w-full top-0 left-0 z-50;
+}
+.header-scroll {
+    @apply sticky top-0 w-full transition-all;
+    @apply bg-gray;
+}
+
+.header-row {    
+    @apply flex flex-wrap justify-between;
+}
+.header-scroll .header-row {
+    @apply items-center;
+}
+.logo-wrapper {
+    @apply basis-1/3 w-1/3;
+
+    img {
+        @apply w-[120px] h-auto;
+    }
+}
+.header-scroll .logo-wrapper {
+    img {
+        @apply w-[65px] h-auto;
+    }
+}
+.menu-wrapper {
+    @apply basis-2/3 w-2/3;
+}
+.main-menu {
+    @apply hidden absolute md:relative left-0 top-full md:top-0 p-5 md:p-0 w-full bg-gray backdrop-blur-lg md:backdrop-blur-0 md:bg-inherit;
+    ul {
+        @apply flex flex-col md:flex-row flex-wrap gap-4 md:gap-10 justify-start;
+    }
+    li {
+        @apply text-[1.15rem];
+    }
+    li a {
+        @apply text-white hover:text-primary transition-all;
+    }
+}
+.show-menu {
+    @apply block;
+}
+.icon-menu {
+    @apply md:hidden;
+}
+.menu-toggle {
+    @apply ml-auto block;
+}
+.icon-menu svg {
+    @apply h-16;
+    fill: #FFF;
+}

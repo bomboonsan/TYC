@@ -1,0 +1,56 @@
+// Home
+.home-banner {
+    @apply aspect-[4/5] md:aspect-[1280/624];
+    .icon svg {
+        @apply h-5 w-auto;
+    }
+}
+.home-banner-row {
+    @apply flex items-center gap-5 my-4;
+}
+.home-banner-content {
+    @apply absolute bottom-[5em] left-0 w-full text-white px-5 md:px-0;
+    .title {
+        @apply text-[1.3em] md:text-[2.5em] font-medium;
+    }
+}
+
+// Products
+.products-banner {
+    @apply aspect-[4/5] md:aspect-[1280/624] bg-cover bg-center;
+    .container {
+        @apply relative h-full;
+    }
+    .content {
+        @apply absolute bottom-10 left-0 w-full text-white z-20 px-5 md:px-0;
+    }
+    .title {
+        @apply text-[1.3em] md:text-3xl font-semibold mb-3;
+    }
+    p {
+        @apply text-lg;
+    }
+}
+.products-banner::before {
+    content: '';
+    @apply absolute w-full h-full left-0 top-0 opacity-70;
+    @apply bg-gradient-to-b from-[#FF4500] to-[#272727] mix-blend-multiply;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255,255,255,.6) !important;
+}
+
+
+.products-card {
+    @apply aspect-[48/29] bg-cover bg-center cursor-pointer;
+    .container {
+        @apply relative h-full cursor-pointer;
+    }
+    .content {
+        @apply absolute bottom-0 left-0 w-full text-white z-20 p-5;
+    }
+    p {
+        @apply text-lg cursor-pointer;
+    }
+}

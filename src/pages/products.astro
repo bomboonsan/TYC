@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductsSlider from '../components/ProductsSlider.jsx';
+import ProductsCardSlider from '../components/ProductsCardSlider.jsx';
+import Slider from '../components/Slider.jsx';
+---
+
+<Layout title="สินค้าและบริการ">
+	<main>
+		<ProductsSlider client:load />
+		<div class="grid-products">
+			<div class="card-product" style="background-image: url('/assets/img/Motocycle.png');">
+				<p>
+					สินค้าประเภท<br/>
+					อะไหล่มอเตอร์ไซด์
+				</p>
+			</div>
+			<div class="card-product" style="background-image: url('/assets/img/Automotives.png');">
+				<p>
+					สินค้าประเภท<br/>
+					อะไหล่รถยนต์
+				</p>
+			</div>
+			<div class="card-product" style="background-image: url('/assets/img/tracter.png');">
+				<p>
+					สินค้าประเภท<br/>
+					อะไหล่รถแทรคเตอร์
+				</p>
+			</div>
+			<div class="card-product" style="background-image: url('/assets/img/Rectangle-12.png');">
+				<p>
+					สินค้ายางขึ้นรูป<br/>
+					ประเภทอื่นๆ
+				</p>
+			</div>
+		</div>
+		<div class="flex flex-wrap items-center bg-gray text-white">
+			<div class="basis-full w-full md:basis-1/2 md:w-1/2">
+				<Slider images={["/assets/img/p1-1.png", "/assets/img/p1-2.png", "/assets/img/p1-3.png"]}  client:load />
+			</div>
+			<div class="basis-full w-full md:basis-1/2 md:w-1/2">
+				<div class="p-10 md:p-20">
+					<h2 class="text-2xl md:text-3xl font-semibold">บริการขึ้นรูปยางตามแม่พิมพ์</h2>
+					<p class="mb-5">
+						รับผลิตขึ้นรูปยางตามแม่พิมพ์ บริการขึ้นรูปผลิตภัณฑ์ยางต่างๆ เช่น ชีลยาง ปะเก็นยาง บูชยาง ไดอะแฟรม อะไหล่ยางที่ใช้ในเครื่องจักร อะไหล่รถยนต์ อะไหล่รถแทรกเตอร์ อะไหล่รถมอเตอร์ไซด์ ยางกันกระแทก ยางรองแท่นเครื่อง ปุ่มยาง ยางโอริง ฯลฯ
+					</p>
+					<p>
+						นอกจากนี้เราสามารถผลิตชิ้นงานยางที่ติดเหล็ก-น๊อตสกูรตามลักษณะของชิ้นงาน สามารถระบุชนิดของยาง หรือคุณสมบัติของผลิตภัณฑ์ที่ต้องการผลิต เพื่อความเหมาะสมในการใช้งาน เช่น ผลิตภัณฑ์ยางที่มีคุณสมบัติกันน้ำ ทนน้ำมันทนสารเคมี หรือ ทนความร้อน
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-wrap flex-row-reverse md:flex-row items-center bg-gray text-white">
+			<div class="basis-full w-full md:basis-1/2 md:w-1/2">
+				<div class="p-10 md:p-20">
+					<h2 class="text-2xl md:text-3xl font-semibold">O-Ring Kit (ชุดโอริงกล่อง)</h2>
+					<p class="mb-5">
+						ในชุดโอริงกล่องมียางโอริงทั้งหมด 30 ขนาด ตามขนาดมาตรฐานสากล (ขนาดนิ้วและขนาดมิลิเมตร)ทางเรายังมียางโอริงอีกหลากหลายขนาด ซึ่งมีทั้งขนาดมาตรฐานของประเทศสหรัฐอเมริกา ญี่ปุ่น ยุโรป และ อื่นๆ
+					</p>
+					<a href="#" class="btn-primary">O-Ring Sizing</a>
+				</div>
+			</div>
+			<div class="basis-full w-full md:basis-1/2 md:w-1/2">
+				<Slider images={["/assets/img/p2-1.png", "/assets/img/p2-2.png", "/assets/img/p2-3.png"]}  client:load />
+			</div>			
+		</div>
+		<div class="py-10  bg-dark text-white">
+			<div class="container mb-10">
+				<div class="flex flex-wrap gap-10">
+					<div class="basis-full w-full md:basis-[350px] md:w-[350px]">
+						<h2 class="text-3xl font-semibold">
+							ขั้นตอนการผลิต
+						</h2>
+					</div>
+					<div class="flex-initial">
+						<p class="">
+							ขั้นตอนการทำงานนั้น ก่อนที่จะออกสู่ตลาดนั้น เราได้ผ่านการควบคุมคุณภาพมากกว่าสองครั้ง เพื่อที่จะทำให้เกิดความผิดพลาดน้อยที่สุด รวมถึงสามารถทำให้ลูกค้ามั่นใจในสินค้าเราได้อย่างแน่นอน
+						</p>
+					</div>
+				</div>
+			</div>
+			<ProductsCardSlider client:load />
+		</div>
+		
+	</main>
+</Layout>
