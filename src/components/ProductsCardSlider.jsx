@@ -15,12 +15,12 @@ export default () => {
       <SwiperSlide>
           <div className="products-card" style={
             {
-              backgroundImage: 'url("/assets/img/card1.png")',
+              backgroundImage: 'url("/assets/img/01_preparing.png")',
             }
           }>
             <div className="content">
               <p>
-                3. In Process, Inspection
+                1. Preparing
               </p>
             </div>            
           </div>
@@ -28,12 +28,12 @@ export default () => {
       <SwiperSlide>
           <div className="products-card" style={
             {
-              backgroundImage: 'url("/assets/img/card2.png")',
+              backgroundImage: 'url("/assets/img/02_productio.png")',
             }
           }>
             <div className="content">
               <p>
-                4. Sorting
+                2. Productio
               </p>
             </div>    
           </div>
@@ -41,12 +41,51 @@ export default () => {
       <SwiperSlide>
           <div className="products-card" style={
             {
-              backgroundImage: 'url("/assets/img/card3.png")',
+              backgroundImage: 'url("/assets/img/03_in_process_inspection.png")',
             }
           }>
             <div className="content">
               <p>
-                5. Final Inspection
+                3. In Process inspection
+              </p>
+            </div>  
+          </div>
+      </SwiperSlide>
+      <SwiperSlide>
+          <div className="products-card" style={
+            {
+              backgroundImage: 'url("/assets/img/04_sorting.png")',
+            }
+          }>
+            <div className="content">
+              <p>
+                4. Sorting
+              </p>
+            </div>  
+          </div>
+      </SwiperSlide>
+      <SwiperSlide>
+          <div className="products-card" style={
+            {
+              backgroundImage: 'url("/assets/img/05_final_inspection.png")',
+            }
+          }>
+            <div className="content">
+              <p>
+                5. Final inspection
+              </p>
+            </div>  
+          </div>
+      </SwiperSlide>
+      <SwiperSlide>
+          <div className="products-card" style={
+            {
+              backgroundImage: 'url("/assets/img/06_packaging.png")',
+            }
+          }>
+            <div className="content">
+              <p>
+                6. Packaging
               </p>
             </div>  
           </div>
