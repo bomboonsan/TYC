@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.jsx';
 ---
 
 <Layout title="ติดต่อเรา">
@@ -31,13 +32,14 @@ import Layout from '../layouts/Layout.astro';
 					</p>
 				</div>
 				<div class="basis-full w-full md:basis-1/2 md:w-1/2">
-					<form action="" class="contact-form">
+					<!-- <form class="contact-form" id="contact_form">
 						<input type="text" placeholder="ชื่อ-นามสกุล" />
 						<input type="email" placeholder="อีเมล" />
 						<input type="tel" placeholder="เบอร์โทรศัพท์ติดต่อ" />
 						<textarea name="" id="" cols="30" rows="10" placeholder="ข้อความของคุณ"></textarea>
-						<button type="submit">ส่งข้อมูล</button>
-					</form>
+						<button type="button">ส่งข้อมูล</button>
+					</form> -->
+					<ContactForm client:load />
 				</div>
 			</div>
 		</div>
