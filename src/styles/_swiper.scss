@@ -54,3 +54,21 @@
         @apply text-lg cursor-pointer;
     }
 }
+
+.swiper-button-next , .swiper-button-prev {
+    color: rgba(255,255,255,.8) !important;
+    
+    &:hover {
+        color: rgba(255,255,255,1) !important;
+    }
+}
+
+.product-item-slide {
+    .swiper-button-next , .swiper-button-prev {
+        color: rgba(0,0,0,.8) !important;
+        
+        &:hover {
+            color: rgba(0,0,0,1) !important;
+        }
+    }
+}

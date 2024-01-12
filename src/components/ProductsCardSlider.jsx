@@ -5,13 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination , Navigation } from 'swiper/modules';
 
 export default () => {
   return (
-    <Swiper modules={[Pagination]} loop={true} slidesPerView={2.4} spaceBetween={30} className="mySwiper">
+    <Swiper modules={[Pagination , Navigation]} navigation={true} loop={true} slidesPerView={2.4} spaceBetween={30} className="mySwiper">
       <SwiperSlide>
           <div className="products-card" style={
             {
