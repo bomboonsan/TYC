@@ -34,7 +34,7 @@ export default () => {
           }>
             <div className="content">
               <p>
-                2. Productio
+                2. Production
               </p>
             </div>    
           </div>
